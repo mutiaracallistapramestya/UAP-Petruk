@@ -30,3 +30,23 @@ void push(){
         total = total + harga[a-1];
     }
 }
+
+void pop(){
+    if(!pangan.empty()){
+        cout << "Sayuran Dihapus Dari Keranjang!" << endl;
+        pangan.pop();
+        total = total-harga[a-1];
+    }
+    else{
+        cout << "Keranjang Kosong" << endl;
+    }
+    getch();
+}
+
+
+void display(){
+    cout << ">SAYURAN TUBABA<" << endl;
+    for(int i = 0; i<10; i++){
+        cout << tanaman[i] << endl;
+    }
+}
